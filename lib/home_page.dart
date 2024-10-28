@@ -81,8 +81,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () async {
                       download_tabarak_67.download_tabarak_1_3();
                       download_tabarak_67.download_tabarak_4_7();
-                      //download_tabarak_67.download_tabarak_1_7();
-                      //download_tabarak_67.download_tabarak_8_13();
+                      download_tabarak_67.download_tabarak_8_13();
+
+                      download_tabarak_67.download_tabarak_13_17();
+                      download_tabarak_67.download_tabarak_18_21();
+                      download_tabarak_67.download_tabarak_22_27();
+                      download_tabarak_67.download_tabarak_27_30();
 
                       //______________________________________
                       bool? _tabarak_1_3_exist =
@@ -90,8 +94,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
                       bool? _tabarak_4_7_exist =
                           await download_tabarak_67.download_tabarak_4_7();
-                      //  bool? _tabarak_1_7_exist =await download_tabarak_67.download_tabarak_1_7();
 
+                      bool? _tabarak_8_13_exist =
+                          await download_tabarak_67.download_tabarak_8_13();
+
+                      bool? _tabarak_13_17_exist =
+                          await download_tabarak_67.download_tabarak_13_17();
+
+                      bool? _tabarak_18_21_exist =
+                          await download_tabarak_67.download_tabarak_18_21();
+
+                      bool? _tabarak_22_27_exist =
+                          await download_tabarak_67.download_tabarak_22_27();
+
+                      bool? _tabarak_27_30_exist =
+                          await download_tabarak_67.download_tabarak_27_30();
                       // in this if cindition we check all files are existed( with &)
                       // when all files are existed we will show the message completed
                       // to change the icon of download button to check
@@ -99,7 +116,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       // if all files are existed
 
                       if (_tabarak_1_3_exist == true &&
-                          _tabarak_4_7_exist == true) {
+                          _tabarak_4_7_exist == true &&
+                          _tabarak_8_13_exist == true &&
+                          _tabarak_13_17_exist == true &&
+                          _tabarak_18_21_exist == true &&
+                          _tabarak_22_27_exist == true &&
+                          _tabarak_27_30_exist == true) {
                         // change the change_icon_of_button value to true
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(

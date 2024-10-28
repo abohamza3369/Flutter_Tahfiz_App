@@ -98,47 +98,6 @@ class DownloadTabarak67 {
 //_____________________________________________
 
   // download file contain tabarak ayat from 1-7
-  Future<bool?> download_tabarak_1_7() async {
-    String url =
-        'https://drive.google.com/uc?export=download&id=10DIsVmJGkRCyZGurOQAXuBgnneY4pikN';
-    String filename = 'tabarak1_7.mp3';
-
-    try {
-      // download files in any folder you want
-      //var dir = Directory('/storage/emulated/0/Download'); // Or any valid directory
-
-      //know the path of app folder by directory
-      Directory dir = await getApplicationDocumentsDirectory();
-
-      if (!dir.existsSync()) {
-        dir.createSync(recursive: true);
-      }
-
-      String fullPath = '${dir.path}/$filename';
-
-      await Dio().download(url, fullPath, onReceiveProgress: (received, total) {
-        if (total != -1) {
-          progress = (received / total) * 100;
-        }
-      });
-
-      // Check if the file exists
-      File file = File(fullPath);
-      if (await file.exists()) {
-        return true;
-      }
-
-      print('File downloaded to $fullPath');
-
-      // return true;
-    } catch (e) {
-      //globalfilepath = Error_Downloading_Message;
-      print('Error downloading file: $e');
-      return false;
-    }
-  }
-//______________________________________________
-
   Future<bool?> download_tabarak_8_13() async {
     String url =
         'https://drive.google.com/uc?export=download&id=12TNnJfqxz23djghME_0pTPKUEfQ5xxlg';
@@ -180,45 +139,6 @@ class DownloadTabarak67 {
   }
 //______________________________________________
 
-  Future<bool?> download_tabarak_1_13() async {
-    String url =
-        'https://drive.google.com/uc?export=download&id=1ieprA2K4-tPmUSkCyaya15tXPBwPzPky';
-    String filename = 'tabarak1_13.mp3';
-
-    try {
-      // download files in any folder you want
-      //var dir = Directory('/storage/emulated/0/Download'); // Or any valid directory
-
-      //know the path of app folder by directory
-      Directory dir = await getApplicationDocumentsDirectory();
-
-      if (!dir.existsSync()) {
-        dir.createSync(recursive: true);
-      }
-
-      String fullPath = '${dir.path}/$filename';
-
-      await Dio().download(url, fullPath, onReceiveProgress: (received, total) {
-        if (total != -1) {
-          progress = (received / total) * 100;
-        }
-      });
-
-      // Check if the file exists
-      File file = File(fullPath);
-      if (await file.exists()) {
-        return true;
-      }
-
-      print('File downloaded to $fullPath');
-
-      // return true;
-    } catch (e) {
-      //globalfilepath = Error_Downloading_Message;
-      print('Error downloading file: $e');
-      return false;
-    }
-  }
 //______________________________________________
 
   Future<bool?> download_tabarak_13_17() async {
@@ -303,86 +223,6 @@ class DownloadTabarak67 {
   }
 //______________________________________________
 
-  Future<bool?> download_tabarak_13_21() async {
-    String url =
-        'https://drive.google.com/uc?export=download&id=1GlBKy3psz0zzx1jRdGt5vgH-TUsntVfS';
-    String filename = 'tabarak13_21.mp3';
-
-    try {
-      // download files in any folder you want
-      //var dir = Directory('/storage/emulated/0/Download'); // Or any valid directory
-
-      //know the path of app folder by directory
-      Directory dir = await getApplicationDocumentsDirectory();
-
-      if (!dir.existsSync()) {
-        dir.createSync(recursive: true);
-      }
-
-      String fullPath = '${dir.path}/$filename';
-
-      await Dio().download(url, fullPath, onReceiveProgress: (received, total) {
-        if (total != -1) {
-          progress = (received / total) * 100;
-        }
-      });
-
-      // Check if the file exists
-      File file = File(fullPath);
-      if (await file.exists()) {
-        return true;
-      }
-
-      print('File downloaded to $fullPath');
-
-      // return true;
-    } catch (e) {
-      //globalfilepath = Error_Downloading_Message;
-      print('Error downloading file: $e');
-      return false;
-    }
-  }
-//______________________________________________
-
-  Future<bool?> download_tabarak_13_27() async {
-    String url =
-        'https://drive.google.com/uc?export=download&id=1K8dzG1a7-7U80w82Ir18EC0YyeEnk1PH';
-    String filename = 'tabarak13_27.mp3';
-
-    try {
-      // download files in any folder you want
-      //var dir = Directory('/storage/emulated/0/Download'); // Or any valid directory
-
-      //know the path of app folder by directory
-      Directory dir = await getApplicationDocumentsDirectory();
-
-      if (!dir.existsSync()) {
-        dir.createSync(recursive: true);
-      }
-
-      String fullPath = '${dir.path}/$filename';
-
-      await Dio().download(url, fullPath, onReceiveProgress: (received, total) {
-        if (total != -1) {
-          progress = (received / total) * 100;
-        }
-      });
-
-      // Check if the file exists
-      File file = File(fullPath);
-      if (await file.exists()) {
-        return true;
-      }
-
-      print('File downloaded to $fullPath');
-
-      // return true;
-    } catch (e) {
-      //globalfilepath = Error_Downloading_Message;
-      print('Error downloading file: $e');
-      return false;
-    }
-  }
 //______________________________________________
 
   Future<bool?> download_tabarak_22_27() async {
